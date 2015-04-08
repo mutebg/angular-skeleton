@@ -1,9 +1,15 @@
 # angular-skeleton
 
-*install*
+## Install
+
+Install:
+```sh
 npm install
 bower install
+```
 
-*tests*
+Tests:
+```sh
 npm test
 protractor protractor.conf.js 
+```
