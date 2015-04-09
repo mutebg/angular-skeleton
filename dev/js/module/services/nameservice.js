@@ -1,14 +1,15 @@
 function NameService() {
+	'use strict';
 
-  function name(name){
-    return name;
-  }
+	function name(_name) {
+		return _name;
+	}
 
-  return {
-    name: name 
-  };
+	return {
+		name: name
+	};
 }
 
 angular
-  .module('appName.module')
-  .factory('NameService', [NameService]);
+	.module('appName.module')
+	.factory('NameService', NameService);

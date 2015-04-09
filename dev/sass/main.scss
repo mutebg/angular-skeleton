@@ -1,0 +1,9 @@
+@import '_parts/variables.scss';
+@import '_parts/reset.scss';
+
+body {
+	background: #ccc;
+	color: $color;
+	font-size: $fontSize;
+	padding: 40px;
+}

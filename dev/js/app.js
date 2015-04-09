@@ -6,4 +6,4 @@ angular
 		
 		'appName.config',
 		'appName.module'
-	])
+	]);

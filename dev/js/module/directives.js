@@ -1,14 +1,16 @@
-function name() {
+function nameDirective() {
+	'use strict';
 	return {
-		restrict: 'EA',
+		restrict: 'E',
 		transclude: true,
 		scope: {
-			name: '=',
+			first: '=',
+			last: '=',
 		},
-		template: '<div>{{ name }}</div>'
+		template: '<div>first: {{ first }} last: {{last}}</div>'
 	};
 }
 
 angular
   .module('appName.module')
-  .directive('name', [name]);
+  .directive('name', [nameDirective]);

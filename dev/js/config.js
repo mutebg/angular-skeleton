@@ -1,5 +1,6 @@
 angular
 	.module('appName.config', [])
-	.constant("config", {
-		'name': 'value'
+	.constant('config', {
+		'name': 'value',
+		'other': 'value',
 	});
