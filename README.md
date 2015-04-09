@@ -1,20 +1,19 @@
 # angular-skeleton
-
+this is my angular.js boilerplate
 ## Install
+
+Install bower, gulp and karma globaly if you not:
+```sh
+npm install bowwer gulp karma -g
+```
 
 Install:
 ```sh
 npm install
 ```
 
-if you have bower installed globaly
-```
-bower install
-```
-else ./node_modules/.bin/bower install
-
 Tests:
 ```sh
 npm test
-protractor protractor.conf.js 
+protractor protractor.conf.js
 ```

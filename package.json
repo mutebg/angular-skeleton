@@ -6,7 +6,7 @@
   "prestart": "npm install",
   "postinstall": "bower install",
   "scripts": {
-    "start": "http-server",
+    "start": "gulp production && http-server",
     "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run  --browsers  PhantomJS"
   },
   "author": "Stoyan Delev",
