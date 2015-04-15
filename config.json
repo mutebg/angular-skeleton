@@ -1,0 +1,29 @@
+{
+	"scripts": [
+		"bower_components/angular/angular.js",
+		"bower_components/angular-route/angular-route.js",
+		"bower_components/angular-resource/angular-resource.js",
+		"bower_components/angular-messages/angular-messages.js",
+
+		"dev/js/app.js",
+		"dev/js/config.js",
+
+		"dev/js/module/module.js",
+		"dev/js/module/directives.js",
+		"dev/js/module/controllers/index.js",
+		"dev/js/module/services/nameservice.js"
+	],
+
+	"options": {
+		"sass_folder": 			"dev/sass/main.scss",
+		"sass_folder_parts": 	"dev/sass/**/*.scss",
+		"css_folder": 			"app/css/",
+		"views": 				"dev/js/**/*.html",
+		"views_dest": 			"app/js/",
+		"index": 				"dev/index.html",
+		"index_dest": 			"app/",
+		"js_folder": 			"dev/js/**/*.js",
+		"images_folder": 		"dev/images/**/*",
+		"images_folder_dest": 	"app/images/"
+	}
+}
