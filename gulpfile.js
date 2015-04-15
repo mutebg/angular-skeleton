@@ -11,26 +11,13 @@ var jshint = require('gulp-jshint');
 
 //LOAD SCRIPTS
 var fs = require('fs');
-var scripts = JSON.parse(fs.readFileSync('loader.json', 'utf8'));
-var scriptsList = scripts.scripts;
+var config = JSON.parse( fs.readFileSync('config.json', 'utf8') );
+var scriptsList = config.scripts;
 var scriptsHTML = '<script src="../' + scriptsList.join('"></script>\n<script src="../') + '"></script>';
+var options = config.options;
 
 
 var PRODUCTION = false;
-
-//global options
-var options = {
-	sass_folder: 'dev/sass/main.scss',
-	sass_folder_parts: 'dev/sass/**/*.scss',
-	css_folder: 'app/css/',
-	views: 'dev/js/**/*.html',
-	views_dest: 'app/js/',
-	index: 'dev/index.html',
-	index_dest: 'app/',
-	js_folder: 'dev/js/**/*.js',
-	images_folder: 'dev/images/**/*',
-	images_folder_dest: 'app/images/',
-};
 
 //development options
 var devOptions = {
@@ -129,7 +116,7 @@ gulp.task('production', function(){
 });
 
 gulp.task('watch', function() {
-	gulp.watch( options.js_folder, ['lint'] );
+	gulp.watch( options.js_folder, ['lint', 'uglify'] );
 	gulp.watch( options.sass_folder_parts, ['sass'] );
 	gulp.watch( options.views, ['copyViews'] );
 	gulp.watch( options.index, ['processhtml'] );

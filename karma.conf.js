@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Sat Apr 04 2015 11:24:01 GMT+0300 (EEST)
 var fs = require('fs');
-var remoteFiles = JSON.parse(fs.readFileSync('loader.json', 'utf8'));
+var remoteFiles = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 var localFiles = [
     'bower_components/angular-mocks/angular-mocks.js',
     'spec/unit/**/*.js'
